@@ -43,7 +43,7 @@ class Compra {
         throw new Error("No hay suficientes entradas disponibles.");
       }
 
-      // ✅ Registrar la compra
+      
       const sql = `
         INSERT INTO compra (usuario_id, venta_id, nombre_usuario, cantidad_comprada) 
         VALUES (?, ?, ?, ?)

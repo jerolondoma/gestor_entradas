@@ -1,8 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const organizadorController = require('../controllers/organizadorController');
-const { autenticarToken, verificarRol } = require('../middleware/authMiddleware'); // 🔥 Importa ambos middleware
-
+const { autenticarToken, verificarRol } = require('../middleware/authMiddleware'); 
 
 router.get('/organizadores', organizadorController.listar);
 router.get('/organizadores/:id', organizadorController.obtenerPorId);
